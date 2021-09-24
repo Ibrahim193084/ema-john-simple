@@ -7,3 +7,13 @@
     margin-right: 5px;
     margin-left: 50px;
 }
+.input-div{
+    background-color: rgb(61, 55, 55);
+    padding: 10px;
+}
+.input{
+    height: 20px;
+    width: 1000px;
+    margin-left: 150px;
+    padding: 5px;
+}

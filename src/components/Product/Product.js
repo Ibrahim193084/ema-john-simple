@@ -16,7 +16,7 @@ const Product = (props) => {
             <div style ={{marginLeft: '15px'}}>
                 <h4 className="product-name">{name}</h4>
                 <p><small>by:{seller}</small></p>
-                <p>Price: {price}</p>
+                <p>Price: ${price}</p>
                 <p><small>Only {stock} left in stock - order soon</small></p>
                 <button onClick={()=>props.handleAddToCart(props.product)}
                 className="btn-regular">{element} Add to cart</button>
