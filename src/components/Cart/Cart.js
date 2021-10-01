@@ -2,6 +2,7 @@ import React from 'react';
 import './Cart.css'
 import '../Product/Product.css'
 import { parse } from '@fortawesome/fontawesome-svg-core';
+import { Link } from 'react-router-dom';
 
 
 const Cart = (props) => {
@@ -37,7 +38,9 @@ const Cart = (props) => {
             <p>Shipping: {shipping}</p>
             <p>Tax: {tax.toFixed(2)}</p>
             <p style={{color: 'red'}}>Grand Total: {grandTotal.toFixed(2)}</p>
+            <Link to = "/review">
             <button className="btn-regular">Review your order</button>
+            </Link>
         </div>
     );
 };
