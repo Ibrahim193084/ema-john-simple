@@ -5,6 +5,7 @@ import './Shop.css'
 import {addToDb, getStoredCart} from '../../utilities/fakedb'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
     const element = <FontAwesomeIcon icon={faShoppingCart} />
@@ -81,7 +82,11 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart = {cart}></Cart>
+                <Cart cart = {cart}>
+                <Link to = "/review">
+            <button className="btn-regular">Review your order</button>
+            </Link>
+                </Cart>
             </div>
             
         </div>

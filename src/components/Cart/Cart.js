@@ -38,9 +38,7 @@ const Cart = (props) => {
             <p>Shipping: {shipping}</p>
             <p>Tax: {tax.toFixed(2)}</p>
             <p style={{color: 'red'}}>Grand Total: {grandTotal.toFixed(2)}</p>
-            <Link to = "/review">
-            <button className="btn-regular">Review your order</button>
-            </Link>
+            {props.children}
         </div>
     );
 };
