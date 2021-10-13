@@ -17,3 +17,13 @@
     margin-left: 150px;
     padding: 5px;
 }
+
+@media only screen (min-width: 400px) and (max-width: 700px){
+    .input{
+        width: 388px;
+        margin: 0px;
+    }
+    .input-div{
+        width: 688px;
+    }
+}

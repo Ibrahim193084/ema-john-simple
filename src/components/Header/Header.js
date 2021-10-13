@@ -25,7 +25,6 @@ const Header = () => {
                         <button className="btn-regular" onClick={logOut}>log out</button>
                         :
                         <NavLink to="/login">Login</NavLink>}
-                
             </nav>
         </div>
     );

@@ -12,7 +12,7 @@ import Shop from './components/Shop/Shop';
 import AuthProvider from './Context/AuthProvider';
 function App() {
   return (
-    <div>
+    <div className="app">
      <AuthProvider>
      <Router>
       <Header></Header>
